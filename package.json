@@ -1,0 +1,28 @@
+{
+  "name": "budget-one-wallet-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5177",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4177"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.3.3",
+    "@capacitor/cli": "^8.3.3",
+    "@capacitor/core": "^8.3.3",
+    "@vitejs/plugin-react": "^4.4.1",
+    "chart.js": "^4.5.1",
+    "lucide-react": "^1.14.0",
+    "react": "^19.1.0",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.14.2",
+    "vite": "^6.3.5",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "vite-plugin-pwa": "^1.2.0"
+  }
+}

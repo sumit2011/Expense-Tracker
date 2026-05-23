@@ -1,0 +1,101 @@
+import React, { Activity } from "react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ChevronDown,
+  Plus,
+  Home,
+  FileText,
+  Wallet,
+  Menu,
+  Search,
+  ShoppingBag,
+  DollarSign,
+  Briefcase,
+  CreditCard,
+  MoreVertical,
+  Shield,
+  Eye,
+  Trash2,
+  X,
+  Heart,
+  Zap,
+  Utensils,
+  Car,
+  Bus,
+  Smile,
+  Building,
+  Calendar,
+  Edit,
+  Share2,
+  ShoppingCart,
+  Dumbbell,
+  IndianRupee,
+  HandCoins,
+  Coffee,
+  CarFront,
+  Scooter,
+  PartyPopper,
+  CloudBackup,
+  FolderDown,
+  FolderUp,
+  ArrowDownToLine,
+} from "lucide-react";
+
+const icons = {
+  chevronLeft: ChevronLeft,
+  chevronRight: ChevronRight,
+  chevronDown: ChevronDown,
+  plus: Plus,
+  home: Home,
+  records: FileText,
+  wallet: Wallet,
+  menu: Menu,
+  search: Search,
+  bag: ShoppingBag,
+  cash: IndianRupee,
+  briefcase: Briefcase,
+  card: CreditCard,
+  dots: MoreVertical,
+  shield: Shield,
+  eye: Eye,
+  trash: Trash2,
+  x: X,
+  heart: Heart,
+  spark: Zap,
+  utensils: Utensils,
+  scooter: Scooter,
+  shoppingBag: ShoppingBag,
+  car: Car,
+  bus: Bus,
+  heartLightning: Heart,
+  smiley: Smile,
+  dollarBox: HandCoins,
+  building: Building,
+  calendar: Calendar,
+  document: FileText,
+  edit: Edit,
+  share: Share2,
+  shoppingCart: ShoppingCart,
+  dumbell: Dumbbell,
+  coffee: Coffee,
+  carFront: CarFront,
+  partyPopper: PartyPopper,
+  cloudBackup: CloudBackup,
+  folderDown: FolderDown,
+  folderUp: FolderUp,
+  arrowDownToLine: ArrowDownToLine,
+};
+
+export default function Icon({ name, className = "", size = 20, ...props }) {
+  const IconComponent = icons[name] || Menu;
+  
+  return (
+    <IconComponent 
+      className={["icon", className].filter(Boolean).join(" ")} 
+      size={size} 
+      aria-hidden="true" 
+      {...props} 
+    />
+  );
+}
