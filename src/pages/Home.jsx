@@ -7,7 +7,6 @@ import Donut from "../components/Donut.jsx";
 import CategoryChips from "../components/CategoryChips.jsx";
 import RecordItem from "../components/RecordItem.jsx";
 import Nav from "../components/Nav.jsx";
-import AIInsightsPanel from "../ai/components/AIInsightsPanel.jsx";
 
 export default function Home({ screen, go, records, totalBalance, budgets, currency, activeDate, dateLabel, onDatePrev, onDateNext, value, onSelect, categories, deleteRecord }) {
   const formatCurrency = (amount) => {
@@ -208,7 +207,6 @@ export default function Home({ screen, go, records, totalBalance, budgets, curre
                 })}
             </div>
           </section>
-          <AIInsightsPanel records={records} categories={categories} budgets={budgets} currency={currency} />
           <section 
             className="panel pad stack"
             ref={swipeRef}

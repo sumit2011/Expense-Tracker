@@ -4,7 +4,6 @@ import Donut from "../components/Donut.jsx";
 import CategoryChips from "../components/CategoryChips.jsx";
 import DateSwitch from "../components/DateSwitch.jsx";
 import Nav from "../components/Nav.jsx";
-import AIInsightsPanel from "../ai/components/AIInsightsPanel.jsx";
 import StatBar from "../components/StatBar.jsx";
 import Chip from "../components/Chip.jsx";
 
@@ -157,7 +156,6 @@ export default function Stats({ screen, go, activeDate, selectedYear, dateLabel,
             </div>
           </div>
    
-          <AIInsightsPanel records={records} categories={categories} budgets={{}} currency={currency} />
           <section 
             className="panel pad stack"
             ref={donutRef}
